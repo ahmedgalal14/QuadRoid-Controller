@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.salsabeel.client.controlActivity">
+
+    <Button
+        android:id="@+id/DisconectBtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Disconnect"
+        android:textAllCaps="false" />
+
+    <GridLayout
+        android:id="@+id/gridLayOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="6"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <SeekBar
+            android:id="@+id/aiel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_column="3"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="-160dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="5"
+            android:max="1000"
+            android:progress="500"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb1"
+            android:thumbTintMode="multiply" />
+
+        <SeekBar
+            android:id="@+id/rudd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_column="2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="5"
+            android:max="1000"
+            android:progress="500"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb1"
+            android:thumbTintMode="multiply" />
+
+        <SeekBar
+            android:id="@+id/eval"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_column="4"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="120dp"
+            android:layout_row="0"
+            android:max="1000"
+            android:progress="500"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:rotation="270"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb1"
+            android:thumbTintMode="multiply" />
+
+
+        <SeekBar
+            android:id="@+id/throttle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_column="1"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="120dp"
+            android:layout_row="0"
+            android:max="1000"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:rotation="270"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb1"
+            android:thumbTintMode="multiply" />
+
+        <ImageView
+            android:id="@+id/imview"
+            android:layout_width="380dp"
+            android:layout_height="220dp"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="15dp"
+            android:layout_row="0"
+            android:background="@android:drawable/alert_light_frame"
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="44dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="808dp"
+        tools:layout_editor_absoluteY="-23dp" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/myTheme">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#50aeba"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="2dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/hint1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Enter the QuadCopter IP, then click the Connect Button to start sending commands."
+        android:textAllCaps="false"
+        android:textColor="@color/textcolorPrimary"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't show again."/>
+
+
+</LinearLayout>
